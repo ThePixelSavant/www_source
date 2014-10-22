@@ -1,26 +1,15 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
+    nib = require('nib'),
     sourcemaps = require('gulp-sourcemaps'),
     connect = require('gulp-connect');
-
-// Use nib
-gulp.task('nib', function () {
-  gulp.src('./css/styl/modules/nib.styl')
-    .pipe(stylus({use: [nib()]}))
-    .pipe(gulp.dest('./css/styl'));
-});
 
 // Get main.styl file and render
 gulp.task('main-css', function () {
   gulp.src('./css/styl/main.styl')
-    .pipe(stylus({use: [nib()], import: ['nib']}))
-    .pipe(gulp.dest('./css'));
-});
-
-// Stylus External sourcemaps
-gulp.task('sourcemaps-external', function () {
-  gulp.src('./css/styl/main.styl')
     .pipe(stylus({
+      use: [nib()],
+      import: ['nib'],
       sourcemap: {
         inline: true,
         sourceRoot: '.',
@@ -30,13 +19,6 @@ gulp.task('sourcemaps-external', function () {
     .pipe(sourcemaps.init({
       loadMaps: true
     }))
-    // Here you can you can use plugins that supports gulp-sourcemaps.
-    // See gulp-sourcemaps readme for a list of such plugins.
-    // For example, using pleeease:
-    // .pipe(pleeease({
-    //   minifier: false,
-    //   sourcemaps: true
-    // }))
     .pipe(sourcemaps.write('.', {
       includeConent: false,
       sourceRoot: '.'
@@ -58,8 +40,8 @@ gulp.task('reload', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('css/styl/**/*.styl', ['main-css', 'sourcemaps-external']);
+  gulp.watch('css/styl/**/*.styl', ['main-css']);
   gulp.watch(['./**/*.html', 'js/main.js', 'js/plugins.js', 'css/main.css'], ['reload']);
 });
 
-gulp.task('default', ['main-css', 'sourcemaps-external', 'connect', 'watch']);
+gulp.task('default', ['main-css', 'connect', 'watch']);
