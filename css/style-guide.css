@@ -1,0 +1,158 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.primary-0 {
+  background-color: #4f6980;
+}
+.secondary-1-0 {
+  background-color: #5e5789;
+}
+.secondary-2-0 {
+  background-color: #518b6d;
+}
+.complement-0 {
+  background-color: #c6a474;
+}
+.primary-1 {
+  background-color: #4e5f6f;
+}
+.secondary-1-1 {
+  background-color: #5a5677;
+}
+.secondary-2-1 {
+  background-color: #527865;
+}
+.complement-1 {
+  background-color: #ab9574;
+}
+.primary-2 {
+  background-color: #4e6377;
+}
+.secondary-1-2 {
+  background-color: #5b567f;
+}
+.secondary-2-2 {
+  background-color: #518168;
+}
+.complement-2 {
+  background-color: #b79b73;
+}
+.primary-3 {
+  background-color: #54738f;
+}
+.secondary-1-3 {
+  background-color: #665e99;
+}
+.secondary-2-3 {
+  background-color: #579b78;
+}
+.complement-3 {
+  background-color: #ddb57c;
+}
+.primary-4 {
+  background-color: #497094;
+}
+.secondary-1-4 {
+  background-color: #5e539e;
+}
+.secondary-2-4 {
+  background-color: #49a074;
+}
+.complement-4 {
+  background-color: #e4b168;
+}
+body {
+  background: #666;
+}
+.style-head h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
+.style-head .tabs {
+  clear: both;
+  background-color: #ccc;
+  text-align: center;
+}
+.style-head .tabs .tab {
+  display: inline-block;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background-color: #999;
+}
+.style-tile {
+  display: block;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+  background: #fff;
+}
+.color-table {
+  margin: 2em 2em 5em;
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+  font-size: 100%;
+}
+.color-table th {
+  padding: 0 1em 0 0;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 100%;
+  font-weight: normal;
+  border: none;
+}
+.color-table .sample {
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 90%;
+  white-space: nowrap;
+}
+.color-table .sample div {
+  display: none;
+}
+.color-table .sample-0 {
+  width: 9em;
+}
+.color-table .white {
+  margin-bottom: 0.2em;
+  color: #fff;
+}
+.color-table .black {
+  margin-top: 0.2em;
+  color: #000;
+}
+@media (min-width: 1000px) {
+  .color-table .sample {
+    width: 6em;
+    height: 6em;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .color-table .sample div {
+    display: block;
+  }
+  .color-table .sample-0 {
+    width: 18em;
+  }
+}
+
+/*# sourceMappingURL=style-guide.css.map */

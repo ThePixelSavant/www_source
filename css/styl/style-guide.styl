@@ -1,0 +1,72 @@
+@require 'main'
+
+body
+	background #666
+
+.style-head
+	h1
+		text-align center
+		font-size 3em
+		color #fff
+	.tabs
+		clear both
+		background-color #CCC
+		text-align center
+		.tab
+			display inline-block
+			margin 0 0.5em
+			padding 0.5em
+			background-color #999
+			
+
+.style-tile
+	display block
+	border-radius 1em
+	margin 1em
+	padding 1em
+	background #fff
+
+.color-table
+	margin 2em 2em 5em
+	border-collapse collapse
+	border none
+	border-spacing 0
+	font-size 100%
+	th
+		padding 0 1em 0 0
+		text-align right
+		vertical-align middle
+		font-size 100%
+		font-weight normal
+		border none
+	.sample
+		width 3em
+		height 3em
+		padding 0
+		border none
+		text-align center
+		vertical-align middle
+		font-size 90%
+		white-space nowrap
+		div
+			display none
+	.sample-0
+		width 9em
+	.white
+		margin-bottom 0.2em
+		color #fff
+	.black
+		margin-top 0.2em
+		color #000
+
+@media (min-width: 1000px)
+	.color-table
+		.sample
+			width 6em
+			height 6em
+			padding 10px
+			border 1px solid white
+			div
+				display block
+		.sample-0
+			width 18em

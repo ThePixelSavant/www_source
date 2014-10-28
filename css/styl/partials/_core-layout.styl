@@ -1,11 +1,17 @@
 body
-  font-family: 'Open Sans', sans-serif
-  font-size: 14px
+  font-family 'Open Sans', sans-serif
+  font-size 14px
 
-.style-head
-  font-size: 4em
-  font-weight: bold
+.clearfix
+  clearfix()
 
-.clearfix {
-  clearfix();
-}
+for i in 0..4
+	.primary-{i}
+		background-color lookup('color-primary-' + i)
+	.secondary-1-{i}
+		background-color lookup('color-secondary-1-' + i)
+	.secondary-2-{i}
+		background-color lookup('color-secondary-2-' + i)
+	.complement-{i}
+		background-color lookup('color-complement-' + i)
+

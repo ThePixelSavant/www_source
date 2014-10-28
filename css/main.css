@@ -1,4 +1,19 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
+.color-primary-0 {
+  color: #4b0018;
+}
+.color-primary-1 {
+  color: #973253;
+}
+.color-primary-2 {
+  color: #6f112f;
+}
+.color-primary-3 {
+  color: #2d000e;
+}
+.color-primary-4 {
+  color: #140006;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
